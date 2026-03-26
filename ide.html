@@ -1,10 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEs | Programming Comparisons</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FEFDFE;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #308BE0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FEFDFE;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #70CE64;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            background-color: #D7E1F6;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            margin-bottom: 15px;
+            color: #308BE0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        table th {
+            background-color: #70CE64;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #D7E1F6;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #308BE0;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #308BE0;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer img {
+            width: 30px;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="images/finalProjLogo_v2.png" alt="Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">IDEs</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>The Right Environment for Every Build</h1>
+            <p>
+                A great programmer is only as fast as their tools. Each language has a place where it works best.
+                These IDEs help you write, test, and debug code faster.
+            </p>
+        </section>
+
+        <section>
+            <h2>Top Recommended IDEs</h2>
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>IDEs</th>
+                    <th>Why</th>
+                </tr>
+                <tr>
+                    <td>Java / Kotlin</td>
+                    <td>IntelliJ, Eclipse</td>
+                    <td>Strong tools and JVM support</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>Visual Studio</td>
+                    <td>Best for .NET apps</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>PyCharm, VS Code</td>
+                    <td>Great plugins and flexibility</td>
+                </tr>
+                <tr>
+                    <td>C / C++</td>
+                    <td>CLion</td>
+                    <td>Good debugging tools</td>
+                </tr>
+                <tr>
+                    <td>Swift</td>
+                    <td>Xcode</td>
+                    <td>Required for iOS/macOS</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>VS Code</td>
+                    <td>Fast and lightweight</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Why IDEs Matter</h3>
+                <ul>
+                    <li>Auto-complete code</li>
+                    <li>Find errors early</li>
+                    <li>Debug easily</li>
+                    <li>Organize projects</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Code suggestions</li>
+                    <li>Debugger</li>
+                    <li>Extensions</li>
+                    <li>Project tools</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>IDE vs Text Editor</h3>
+                <p><strong>IDE:</strong> more tools, easier for beginners</p>
+                <p><strong>Editor:</strong> faster, more customizable</p>
+            </div>
+
+            <div class="card">
+                <h3>Workflow</h3>
+                <p><strong>Without IDE:</strong> manual work</p>
+                <p><strong>With IDE:</strong> faster + easier debugging</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/twitterlogo.png">
+            <img src="images/instagramlogo.png">
+            <img src="images/facebooklogo.png">
+        </div>
+        <h2>Programming Comparisons</h2>
+        <p>&copy; 2026</p>
+    </footer>
 </body>
 </html>
