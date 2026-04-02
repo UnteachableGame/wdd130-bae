@@ -1,0 +1,14 @@
+header img {
+    background-color: black;
+}
+
+#menubar div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#intro-content {
+
+}
