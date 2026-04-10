@@ -169,6 +169,17 @@ main {
     font-family: "AncizarSans", serif;
 }
 
+#extra a {
+    justify-self: left;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1b9aaa;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-family: "AncizarSans", serif;
+}
+
 /*------------- Footer --------------*/
 
 footer {
